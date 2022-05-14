@@ -17,6 +17,7 @@ const fs = require('fs');
 
     const $ = await getHtml(url)
 
+    //Surf pages and getting information
     for(let i = 1; i <= page; i++){
         const selector = await getHtml(`url/${i}`)
         let title
